@@ -7,7 +7,7 @@
     },
     "servers": [
         {
-            "url": "http://localhost",
+            "url": "http://localhost:8000",
             "description": "API Server Utama"
         }
     ],
@@ -15,7 +15,7 @@
         "/api/test": {
             "get": {
                 "description": "Endpoint tes untuk memastikan Swagger berfungsi",
-                "operationId": "ba63f71052c5036eea513d158b922c8c",
+                "operationId": "af4eef7c415174b57a22c482494a6a28",
                 "responses": {
                     "200": {
                         "description": "Sukses"

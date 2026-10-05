@@ -15,15 +15,5 @@ use OpenApi\Attributes as OA;
 )]
 abstract class Controller
 {
-    #[OA\Get(
-        path: '/api/test',
-        description: 'Endpoint tes untuk memastikan Swagger berfungsi',
-        responses: [
-            new OA\Response(response: 200, description: 'Sukses')
-        ]
-    )]
-    public function testSwagger()
-    {
-        return response()->json(['message' => 'Sukses']);
-    }
+    //
 }
