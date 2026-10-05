@@ -10,9 +10,9 @@ class SwaggerBasicAuth
 {
     public function handle(Request $request, Closure $next): Response
     {
-        // Membaca kredensial dari .env
-        $validUser = env('SWAGGER_USERNAME');
-        $validPass = env('SWAGGER_PASSWORD');
+        // Membaca kredensial dari config agar aman saat production (config:cache)
+        $validUser = config('l5-swagger.basic_auth.username');
+        $validPass = config('l5-swagger.basic_auth.password');
 
         if (!$validUser || !$validPass) {
             abort(403, 'Swagger access is not configured.');

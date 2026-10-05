@@ -330,4 +330,13 @@ return [
             'L5_SWAGGER_CONST_HOST' => env('L5_SWAGGER_CONST_HOST', 'http://my-default-host.com'),
         ],
     ],
+
+    /*
+     * Basic Auth Credentials for Middleware
+     */
+    'basic_auth' => [
+        'username' => env('SWAGGER_USERNAME'),
+        'password' => env('SWAGGER_PASSWORD'),
+    ],
 ];
+
