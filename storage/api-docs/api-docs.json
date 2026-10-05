@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Finance Management API Documentation",
+        "description": "Dokumentasi API untuk Aplikasi Pencatatan Keuangan",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost",
+            "description": "API Server Utama"
+        }
+    ],
+    "paths": {
+        "/api/test": {
+            "get": {
+                "description": "Endpoint tes untuk memastikan Swagger berfungsi",
+                "operationId": "ba63f71052c5036eea513d158b922c8c",
+                "responses": {
+                    "200": {
+                        "description": "Sukses"
+                    }
+                }
+            }
+        }
+    }
+}

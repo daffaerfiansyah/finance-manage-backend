@@ -10,9 +10,9 @@ class SwaggerBasicAuth
 {
     public function handle(Request $request, Closure $next): Response
     {
-        // Membaca kredensial dari config (aman saat config:cache aktif)
-        $validUser = config('scramble.auth.username');
-        $validPass = config('scramble.auth.password');
+        // Membaca kredensial dari .env
+        $validUser = env('SWAGGER_USERNAME');
+        $validPass = env('SWAGGER_PASSWORD');
 
         if (!$validUser || !$validPass) {
             abort(403, 'Swagger access is not configured.');
